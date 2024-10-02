@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Za moju devojku</title>
+    <style>
+      body {
+        background-color: #d1f7d5; /* Bebi zelena boja */
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #333;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+      }
+
+      h1 {
+        color: #77c788; /* Tamnija bebi zelena za naslov */
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 20px;
+        color: #4ca569; /* Mekša zelena za tekst */
+      }
+
+      img {
+        max-width: 300px;
+        border-radius: 10px;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+
+      .extra-text {
+        background-color: rgba(255, 255, 255, 0.8); /* Prozirna bela pozadina */
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #secondPage {
+        display: none; /* Sakrij drugi prozor u početku */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Prva sekcija -->
+    <div id="firstPage">
+      <h1>Za najdivniju devojku na svetu, Ninu...</h1>
+      <p>Hvala ti za najlepših 7 meseci, volim te!</p>
+      <img src="moja_slika.png" alt="Devojka" ondblclick="showSecondPage()" />
+      <div class="flower"></div>
+      <p>(Dvoklikni na sliku za još nešto lepo!)</p>
+    </div>
+
+    <!-- Druga sekcija sa tekstom -->
+    <div id="secondPage">
+      <div class="extra-text">
+        <h2>Ljubice moja,</h2>
+        <p>Želim ti reći koliko sam srećna što te imam u svom životu. Svakim danom me iznova inspirišeš tvojom dobrotom, osmehom i nežnošću. Ovi meseci su mi bili najlepši i znam da će svaki sledeći biti još lepši uz tebe. Hvala ti za sve!</p>
+      </div>
+    </div>
+
+    <script>
+      function showSecondPage() {
+        document.getElementById("firstPage").style.display = "none"; // Sakrij prvu stranicu
+        document.getElementById("secondPage").style.display = "block"; // Prikaži drugu stranicu
+      }
+    </script>
+  </body>
+</html>
